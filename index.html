@@ -11,23 +11,9 @@
     <meta property="og:description" content="Откройте красоту Нормандии с местными русскоговорящими гидами" />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://normandie-tours.netlify.app/" />
-    <script>
-      // Debug: Vérifier que le HTML se charge
-      console.log('📄 HTML loaded');
-    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      // Fallback si React ne se charge pas
-      setTimeout(() => {
-        const root = document.getElementById('root');
-        if (!root || root.innerHTML.trim() === '') {
-          console.error('❌ React ne s\'est pas chargé correctement');
-          root.innerHTML = '<div style="padding: 20px; text-align: center; font-family: Arial;"><h1>Chargement...</h1><p>Si cette page reste blanche, vérifiez la console pour les erreurs.</p></div>';
-        }
-      }, 3000);
-    </script>
   </body>
 </html>
